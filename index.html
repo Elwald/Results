@@ -6,12 +6,16 @@
     <meta name="keywords" content="Резюме,первый раз,попытка">
     <meta name="description" content="Резюме Александра Сутыгина">
     <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    
-    <h2>Just image</h2>
-    <img src="C:\Users\RobotComp.ru\OneDrive\Документы\vscode\img\lily-is-art-v0-xaact0q8h2pc1 (1).webp" alt="Just image" width="300">
 
+    <div class="container">
+    <div class="info">
+    <h2>Just image</h2>
+    <img src="img/lily-is-art-v0-xaact0q8h2pc1 (1).webp" alt="Just image" width="300">
+<div class="info-text">
     <h1>Первая попытка</h1>
     <p><strong>Первая попытка</strong> работы с html</p>
     <p>Пытаюсь <em>учиться</em> и <em>развиваться</em></p>
@@ -20,27 +24,30 @@
     <a href="https://t.me/Elwal" target="_blank"> Телега</a>
     / 
     <a href="https://vk.com/id12514975" target="_blank">Вконтакте</a>
-    <hr>
+</div>
+</div>
+        <hr>
+        <div class="card bg-red">
+        <h1>My hobbies</h1>
 
-    <h1>My hobbies</h1>
-
-    <ol>
-        <li>Sport</li>
-        <li>Games</li>
-        <li>Cooking</li>
-    </ol>
-
+        <ol class="list">
+            <li>Sport</li>
+            <li>Games</li>
+            <li>Cooking</li>
+        </ol>
+</div>
+    <div class="card bg-yellow" >
     <h1>Опыт работы</h1>
 
-    <table>
-        <thead>
+    <table class="table">
+        <!-- <thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
 
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>ООО НСТ</td>
@@ -59,22 +66,25 @@
 
         
     </table>
+</div>
 
-    <form action="">
+    <form action="" class="form">
         <h2>Связаться со мной</h2>
 
-        <div>
+        <div class="form-row">
+
+            <div class="form-group">
 <label for="Ваше имя">Ваше имя</label>
 <input type="text" id="Ваше имя" placeholder="Введите имя">
-<br>
-<br>
 
-<div>
+
+<div class="form-group">
 <label for="eamil">Ваш email</label>
 <input type="email" name="" id="email" placeholder="Введите email">
-<br><br>
+</div></div>
 
-<div>
+
+<div class="form-group">
 <label for="message">Ваше сообщение</label>
 <br>
 <textarea  id="message" cols="30" rows="10">
@@ -82,7 +92,7 @@
 </textarea>
 
 <div>
-<button type="submit">Отправить</button>
+<button type="submit" class="btn">Отправить</button>
 
 
 </div>
@@ -91,6 +101,7 @@
 </div>
 
 
+</div>
 </div>
 
 
